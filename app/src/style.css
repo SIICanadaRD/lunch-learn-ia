@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #1f2937;
-  background: #f3f4f6;
+  background: #f8fafc;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,9 +20,9 @@ body {
 }
 
 #app {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1rem;
 }
 
 .app-shell {
@@ -40,7 +40,8 @@ body {
 
 h1 {
   margin: 0.25rem 0 0.5rem;
-  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.2rem);
+  color: #111827;
 }
 
 .subtitle {
@@ -48,28 +49,24 @@ h1 {
   color: #4b5563;
 }
 
-.card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1rem 1.2rem;
+.pipeline-premium {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
 }
 
-.card-title {
-  margin-top: 0;
+.pipeline-node {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #1f2937;
+  border-radius: 8px;
+  padding: 0.55rem;
+  cursor: pointer;
+  text-align: left;
 }
 
-.card-lead {
-  color: #4b5563;
-}
-
-.pipeline,
-.fun-facts {
-  margin: 0.6rem 0 0;
-  padding-left: 1.2rem;
-}
-
-.pipeline li,
-.fun-facts li {
-  margin: 0.35rem 0;
+.pipeline-note {
+  margin-top: 0.8rem;
+  color: #6b7280;
 }

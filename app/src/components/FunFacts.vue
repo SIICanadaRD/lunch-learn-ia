@@ -1,20 +1,21 @@
 <script setup lang="ts">
+interface FactItem {
+  title: string;
+  description: string;
+  tag: string;
+  confidence: 'Élevée' | 'Moyenne' | 'Faible' | string;
+}
+
 interface Props {
-  items: string[];
+  items: FactItem[];
 }
 
 defineProps<Props>();
 </script>
 
 <template>
-  <section class="card">
-    <h2 class="card-title">Fun facts (placeholder)</h2>
-    <p class="card-lead">Cette section sera générée en live pendant la démo.</p>
-
-    <ul class="fun-facts">
-      <li v-for="(item, index) in items" :key="index">
-        {{ item }}
-      </li>
-    </ul>
+  <section>
+    <h2>Insights (placeholder)</h2>
+    <p>Section vide avant génération. Nombre d’items actuel : {{ items.length }}.</p>
   </section>
 </template>
