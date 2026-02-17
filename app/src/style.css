@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background: #f3f4f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.app-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+  font-size: 0.78rem;
+}
+
+h1 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+}
+
+.subtitle {
+  margin: 0;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.card-lead {
+  color: #4b5563;
+}
+
+.pipeline,
+.fun-facts {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.pipeline li,
+.fun-facts li {
+  margin: 0.35rem 0;
+}
