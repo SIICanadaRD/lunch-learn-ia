@@ -24,7 +24,7 @@ Générer une page web “suite des slides” à partir d’un mot reçu par ema
 Une webapp Vite + Vue (scaffold prêt) qui affiche :
 - Le mot/objet du volontaire (en titre)
 - Un mini rappel du pipeline **Objectif → Entrées → LLM → Sortie → Validation**
-- Une section “fun” (2–5 fun facts / analogies) liée au mot
+- Une section de **révélation animée du mot** (boîte à ouvrir + représentation CSS du mot)
 
 ### Validation
 - `npm run build`
@@ -45,3 +45,11 @@ Une webapp Vite + Vue (scaffold prêt) qui affiche :
 - Modifie uniquement les fichiers autorisés (liste fournie).
 - Produit du code complet, copiable/collable.
 - Assure-toi que `npm run build` passe.
+
+## Décision récente (contrat renforcé)
+- `demo/contract.md` autorise désormais, en plus des composants Vue/CSS, des fichiers TS ciblés :
+  - `src/types/*.ts`
+  - `src/data/*.ts`
+  - `src/composables/*.ts`
+- La section “Fun Facts” est remplacée par une interaction obligatoire de révélation (boîte animée + CSS art du mot).
+- Le pipeline doit être plus visuel et interactif (hover/clic + panneau dynamique inputs/outputs/risques/contrôles).

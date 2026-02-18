@@ -25,8 +25,12 @@ Exemple de contrat (cas pratique Vite+Vue) :
 - Édite uniquement :
   - `src/App.vue`
   - `src/components/Deck.vue`
-  - `src/components/FunFacts.vue`
+  - `src/components/RevealBox.vue`
   - `src/style.css` (ou styles scoped)
+- Peut aussi créer des fichiers TS ciblés si autorisé :
+  - `src/types/*.ts`
+  - `src/data/*.ts`
+  - `src/composables/*.ts`
 - Ne pas ajouter de dépendances.
 - Ne pas modifier la config Vite.
 

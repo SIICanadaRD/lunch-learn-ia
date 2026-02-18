@@ -21,3 +21,11 @@ Validation optionnelle (si tu veux illustrer “tests”) :
 ## Contraintes
 - Éviter en live : ajout de dépendances, modifications de config, refactor massif.
 - Limiter la surface de génération à 2–4 fichiers pour rapidité et fiabilité.
+
+## Évolution récente du contrat de démo
+- Le contrat autorise désormais des fichiers TypeScript ciblés en plus des composants/styles :
+  - `src/types/*.ts`
+  - `src/data/*.ts`
+  - `src/composables/*.ts`
+- Objectif : permettre une UI plus ambitieuse tout en gardant une architecture claire et testable.
+- Les garde-fous restent inchangés : pas de dépendances ajoutées, pas de modification de la config Vite.
